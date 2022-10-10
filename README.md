@@ -6,7 +6,7 @@ This script starts an apache2 webserver, clones nc.exe, converts the clone to he
 ## Usage
 This script was written to help send a Windows compatible netcat and make it accessible to be downloaded via the webserver. 
 
-`./necat2hex4ft.sh`
+`./necat_for_windows.sh`
 
 ```######################################################################
    This script starts an Apache2 server, clones nc.exe, converts it
